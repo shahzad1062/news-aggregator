@@ -9,3 +9,5 @@ Artisan::command('inspire', function () {
 })->purpose('Display an inspiring quote');
 
 Schedule::command('fetch:guardian-articles')->hourly();
+
+Schedule::command('fetch:bbc-news')->everyThreeHours();

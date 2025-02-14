@@ -9,3 +9,5 @@ Route::get('/', function () {
 
 // Route::get('/articles', [ArticleController::class, 'index']);
 Route::get('/articles', [Controllers\ArticleController::class, 'index']);
+
+Route::get('/bbc-news', [Controllers\BbcNewsController::class, 'index']);
