@@ -11,3 +11,7 @@ Artisan::command('inspire', function () {
 Schedule::command('fetch:guardian-articles')->hourly();
 
 Schedule::command('fetch:bbc-news')->everyThreeHours();
+
+Schedule::command('fetch:nyt-articles')
+        ->hourly()
+        ->withoutOverlapping();
